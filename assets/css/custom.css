@@ -2,6 +2,7 @@
   @include media-breakpoint-only(lg) {
     column-count: 4;
   }
+
   @include media-breakpoint-only(xl) {
     column-count: 5;
   }
@@ -17,29 +18,15 @@
   height: 300px;
 }
 
-.post-wrapper h1,
-.post-wrapper h2,
-.post-wrapper h3,
-.post-wrapper h4,
-.post-wrapper h5,
-.post-wrapper h6 {
-  transition: opacity, 1s;
-}
-
-.post-wrapper h1[data-scroll="in"],
-.post-wrapper h2[data-scroll="in"],
-.post-wrapper h3[data-scroll="in"],
-.post-wrapper h4[data-scroll="in"],
-.post-wrapper h5[data-scroll="in"],
-.post-wrapper h6[data-scroll="in"] {
-  opacity: 1;
-}
-
-.post-wrapper h1[data-scroll="out"],
-.post-wrapper h2[data-scroll="out"],
-.post-wrapper h3[data-scroll="out"],
-.post-wrapper h4[data-scroll="out"],
-.post-wrapper h5[data-scroll="out"],
-.post-wrapper h6[data-scroll="out"] {
+.splitting .char {
+  color: #204754;
   opacity: 0;
+  transform: translateY(30%);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: calc(0.2s + (0.04s * var(--char-index)));
+}
+
+.splitting[data-scroll="in"] .char {
+  opacity: 1;
+  transform: translateY(0);
 }
