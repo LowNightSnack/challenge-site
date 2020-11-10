@@ -27,6 +27,17 @@
     column-count: 6;
   }
 }
+
+@font-face {
+  font-family: "Minecraft";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Minecraft"), local("Minecraft-Regular"),
+    url(https://lownightsnack.github.io/challenge-site/assets/css/fonts/Minecraft-Regular.woff)
+      format("woff");
+}
+
 .swiper-container {
   width: 600px;
   height: 300px;
@@ -48,4 +59,17 @@
 .splitting[data-scroll="in"] .char {
   opacity: 1;
   transform: translateY(0);
+}
+
+.post-wall-item {
+  max-width: 17rem;
+  transition: ease 0.2s;
+}
+
+.post-wall-item:hover {
+  transform: translateY(-0.7rem);
+}
+
+.card-title {
+  font-family: "Minecraft-Regular";
 }
