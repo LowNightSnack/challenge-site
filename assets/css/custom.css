@@ -34,7 +34,7 @@
   font-weight: 400;
   font-display: swap;
   src: local("Minecraft"), local("Minecraft-Regular"),
-    url(https://lownightsnack.github.io/challenge-site/assets/css/fonts/Minecraft-Regular.woff)
+    url(https://lownightsnack.github.io/challenge-site/assets/css/fonts/MinecraftRegular.woff)
       format("woff");
 }
 
